@@ -19,6 +19,7 @@ public class PickUpObject : MonoBehaviour
                 PickedObject.transform.position = ZonadeInteraccion.position;
                 PickedObject.GetComponent<Rigidbody>().useGravity = false;
                 PickedObject.GetComponent <Rigidbody>().isKinematic = true;
+                AudioManager.Instance.Play2D("Agarrar");
             }
         } else if (PickedObject != null)
         {
@@ -29,6 +30,7 @@ public class PickUpObject : MonoBehaviour
                 PickedObject.GetComponent<Rigidbody>().useGravity = true;
                 PickedObject.GetComponent<Rigidbody>().isKinematic = false;
                 PickedObject = null;
+                AudioManager.Instance.Play2D("Soltar"); 
             }
         }
     }

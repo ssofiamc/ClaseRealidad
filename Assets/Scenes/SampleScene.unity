@@ -644,6 +644,55 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &602476794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602476796}
+  - component: {fileID: 602476795}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &602476795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602476794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e07ff246c291742ab4274e35e7ef20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  sounds:
+  - {fileID: 11400000, guid: 187b1f0eea350a44286b9f2bf2db33b9, type: 2}
+  - {fileID: 11400000, guid: d9a3034709f4cbd47964d566c2d0d8dc, type: 2}
+  - {fileID: 11400000, guid: 3588aa5c11c994b46b2f6592b9e66b30, type: 2}
+  - {fileID: 11400000, guid: 1123c09977a730b43b5d18e4339667ed, type: 2}
+--- !u!4 &602476796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602476794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.22479, y: 5.78086, z: 16.21349}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604532576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1102,6 @@ GameObject:
   - component: {fileID: 877424804}
   - component: {fileID: 877424803}
   - component: {fileID: 877424808}
-  - component: {fileID: 877424809}
   m_Layer: 0
   m_Name: cubito
   m_TagString: Untagged
@@ -1182,19 +1230,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &877424808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877424802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb8c397e345b31d489beff0f136b1030, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AgarrarObjeto
-  esAgarrable: 1
---- !u!114 &877424809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1695,7 +1730,6 @@ GameObject:
   - component: {fileID: 1566651009}
   - component: {fileID: 1566651008}
   - component: {fileID: 1566651013}
-  - component: {fileID: 1566651014}
   m_Layer: 0
   m_Name: cubito (1)
   m_TagString: Untagged
@@ -1824,19 +1858,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1566651013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566651007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb8c397e345b31d489beff0f136b1030, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AgarrarObjeto
-  esAgarrable: 1
---- !u!114 &1566651014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2140,3 +2161,4 @@ SceneRoots:
   - {fileID: 1148454285}
   - {fileID: 877424807}
   - {fileID: 1566651012}
+  - {fileID: 602476796}
